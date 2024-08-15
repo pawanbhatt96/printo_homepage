@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: scroll;
+}
+.container {
+  display: flex;
+  background-color: rgb(213, 193, 193);
+  height: 34px;
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: rgb(35, 34, 32);
+  justify-content: space-around;
+  background-color: rgb(204, 204, 220);
+}
+.navbar h3 {
+  margin-right: -850px;
+}
+#sample {
+  margin-left: 14px;
+}
+#sample:hover {
+  cursor: pointer;
+}
+#left {
+  font-size: 18px;
+}
+#btn1 {
+  padding: 18px;
+  margin-right: -410px;
+  background-color: rgb(197, 175, 10);
+  color: white;
+  font: 44px;
+  border: none;
+  letter-spacing: 2px;
+}
+#btn1:hover {
+  cursor: pointer;
+  background-color: rgb(207, 185, 22);
+}
+#left {
+  margin-left: -350px;
+}
+.nav2 {
+  height: 85px;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  width: 100%;
+}
+.nav2 input {
+  height: 50px;
+  width: 250px;
+  margin-top: 23px;
+  font: 23px;
+  background-color: rgb(232, 230, 215);
+  border: none;
+
+  border-radius: 50px;
+}
+.nav2 input::placeholder {
+  font-size: 18px;
+  padding: 12px;
+}
+.logo img {
+  margin-top: 23px;
+  margin-left: 23px;
+}
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  margin-left: 620px;
+}
+#blue {
+  height: 25px;
+}
+.side img {
+  height: 28px;
+  margin-right: -13px;
+}
+.below {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 77px;
+  margin-left: 423px;
+}
+.main {
+  background-color: rgb(212, 202, 221);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 15px;
+  letter-spacing: 1px;
+}
+.home {
+  height: 120px;
+  display: flex;
+  position: relative;
+}
+.home h3 {
+  color: rgb(146, 150, 154);
+  position: absolute;
+  margin: 25px 0px 0px 45px;
+}
+.bike {
+  height: 380px;
+  width: 99%;
+  margin: 0px 15px 0px 15px;
+}
+.bike img {
+  width: 99%;
+}
+.same {
+  height: 220px;
+}
+.same h1 {
+  text-align: center;
+  padding-top: 65px;
+  font-size: 44px;
+}
+.same h3 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 22px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 23px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.comp {
+  height: 490px;
+  width: 350px;
+  margin-top: 30px;
+}
+.comp img {
+  box-shadow: 12px 12px 20px rgb(61, 58, 53);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.comp img:hover {
+  cursor: pointer;
+  animation: rotate 0.8s linear;
+}
+.mid,
+.mid2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font: 22px;
+  width: 280px;
+}
+.mid h3 {
+  margin-top: 20px;
+  padding: 12px;
+  text-shadow: 2px 2px 22px #6b6666;
+}
+.twoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.twoimg img {
+  width: 100vh;
+  height: 140px;
+}
+.logos,
+.heading {
+  display: flex;
+  margin-top: 66px;
+  justify-content: center;
+  align-items: center;
+}
+.logos {
+  margin-bottom: 35px;
+}
+.logos img {
+  box-shadow: 20px 20px 62px rgb(191, 168, 168);
+}
+.heading {
+  text-shadow: 17px 10px 12px rgb(193, 179, 179);
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(198, 134, 134);
+}
+.five {
+  margin-top: 54px;
+  display: grid;
+}
+.five a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.dropdown {
+  display: block;
+  position: absolute;
+  /* background-color: rgb(120, 107, 131); */
+  z-index: 1;
+  border-radius: 2px;
+  padding: 12px;
+  display: none;
+  margin-left: -50px;
+}
+.main a:hover .dropdown {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  border-radius: 2px;
+  padding: 10px;
+}
+.dropdown ul {
+  list-style-type: none;
+  background-color: rgb(204, 204, 220);
+}
+.dropdown ul li {
+  border-color: brown;
+  padding: 12px;
+  text-shadow: 20px 20px 62px rgb(191, 55, 55);
+  margin: 10px;
+  color: rgb(26, 19, 19);
+  letter-spacing: 1px;
+  font-size: 23px;
+  background-color: rgb(193, 193, 213);
+  box-shadow: 20px 20px 62px rgb(97, 69, 69);
+}
+#store {
+  width: 100px;
+}
+.visa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compy {
+  margin-top: -68px;
+}
+.supt {
+  margin-bottom: 35px;
+}
+.link {
+  margin-top: -64px;
+}
+.call {
+  margin-top: -34px;
+}
+.five h2 {
+  margin-left: 33px;
+}
+.five a {
+  margin-left: 23px;
+}
+.call a {
+  margin-left: -5px;
+}
+.fol {
+  margin-left: -28px;
+}
+
+.social {
+  margin-right: 43px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: slategray;
+  color: rgb(11, 1, 1);
+  font-size: 20px;
+  height: 60px;
+}
+.another img {
+  width: 100%;
+}
+.another {
+  margin-bottom: 35px;
+}
+.another2 {
+  margin-top: 40px;
+}
+.another2 img {
+  width: 100%;
+}
+.another3 {
+  margin-top: 50px;
+}
+.another3 img {
+  width: 100%;
+}
+.another4 {
+  margin-top: 80px;
+}
+.another4 h1 {
+  font-size: 40px;
+  color: rgb(89, 75, 75);
+}
+.another4 p {
+  font-size: 22px;
+  color: purple;
+}
+.para {
+  margin-left: 23px;
+}
+.inside {
+  margin-top: 28px;
+}
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+.popular {
+  margin-top: 38px;
+}
+.pop {
+  margin-left: 34px;
+  margin-bottom: 33px;
+}
+.pop h1 {
+  font-size: 40px;
+  color: rgb(89, 75, 75);
+}
+@keyframes opacity{
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 0.2%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+.sec1 {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 12px;
+  justify-content: space-between;
+  box-shadow: 20px 20px 62px rgb(158, 136, 136);
+}
+.sec2 {
+  width: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 20px 20px 62px rgb(158, 136, 136);
+}
+.sec2:hover{
+animation: opacity 0.1s ease-in-out;
+}
+.sec1:hover{
+  animation: opacity 0.1s ease-in-out;
+}
+.gifts {
+  display: flex;
+  margin-top: 5px;
+}
+.gifts,
+.logos:hover {
+  cursor: pointer;
+}
